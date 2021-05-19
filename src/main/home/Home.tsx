@@ -1,8 +1,7 @@
 import React from "react";
-import Header from "../header/Header";
-
+import BasicLayout from "../layouts/BasicLayout";
 const Home = () => {
-  return <Header />;
+  return <BasicLayout />;
 };
 
 export default Home;
