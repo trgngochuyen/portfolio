@@ -1,5 +1,7 @@
 import { makeStyles } from "@material-ui/core";
 import React from "react";
+import BasicLayoutHeaderNav from "./BasicLayoutHeaderNav";
+import BasicLayoutSkillsSection from "./BasicLayoutSkillsSection";
 
 const headerNavBarHeight = "50px";
 const styles = makeStyles({
@@ -31,13 +33,13 @@ const BasicLayout = () => {
   return (
     <div>
       <div className={classes.headerNavBar} id="headerNavBar">
-        This is header nav bar
+        <BasicLayoutHeaderNav />
       </div>
       <div className={classes.introduction} id="introduction">
         This is introduction
       </div>
       <div className={classes.skills} id="skills">
-        This is skills section
+        <BasicLayoutSkillsSection />
       </div>
       <div className={classes.projects} id="projects">
         This is projects section
